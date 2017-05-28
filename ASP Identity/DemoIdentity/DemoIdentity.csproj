@@ -75,12 +75,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\ApplicationRoleManager.cs" />
     <Compile Include="BLL\ApplicationSignInManager.cs" />
     <Compile Include="BLL\ApplicationUserManager.cs" />
     <Compile Include="BLL\EmailService.cs" />
     <Compile Include="BLL\SmsService.cs" />
     <Compile Include="DAL\ApplicationDbContext.cs" />
+    <Compile Include="Entities\ApplicationRoleStore.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
+    <Compile Include="Entities\ApplicationUserStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
