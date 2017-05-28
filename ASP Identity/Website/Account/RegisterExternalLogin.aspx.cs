@@ -3,8 +3,8 @@ using System.Web;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Owin;
-using Website.Models;
+using DemoIdentity.BLL;
+using DemoIdentity.Entities;
 
 namespace Website.Account
 {

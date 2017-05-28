@@ -3,8 +3,7 @@ using System.Web;
 using System.Web.UI;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
-using Owin;
-using Website.Models;
+using DemoIdentity.BLL;
 
 namespace Website.Account
 {
