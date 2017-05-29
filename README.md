@@ -78,6 +78,7 @@ The focus is on coding with Identity 2.0 with Entity Framework 6.
 **Resources**
 
 - [Channel 9 - Customizing ASP.NET Authentication with Identity](https://channel9.msdn.com/Series/Customizing-ASPNET-Authentication-with-Identity)
+- [Configuring Chrome and Firefox for Windows Integrated Authentication](https://specopssoft.com/configuring-chrome-and-firefox-for-windows-integrated-authentication/)
 
 ## Repositories
 
