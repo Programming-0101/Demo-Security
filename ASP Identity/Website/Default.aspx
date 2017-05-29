@@ -17,6 +17,7 @@
     <div class="row">
         <div class="col-md-4">
             <h2>User Security</h2>
+            <p>Now configured to use <a href="idm/">IdentityManager</a>.</p>
             <div class="cards">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
