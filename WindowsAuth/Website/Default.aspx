@@ -54,7 +54,7 @@
                         <span class="glyphicon glyphicon-info-sign" title="Use this form to check if the user is in a particular role name"></span>
                     </div>
                     <div class="panel-body">
-                        <asp:TextBox ID="RoleName" runat="server" Text="Administrators" />
+                        <asp:TextBox ID="RoleName" runat="server" />
                         <br />
                         <asp:LinkButton ID="CheckRole" runat="server" CssClass="btn btn-primary">Check</asp:LinkButton>
                         &nbsp;&nbsp;&nbsp;
@@ -74,6 +74,17 @@
                     </div>
                     <div class="panel-body">
                         <asp:Label ID="WebAppIdentity" runat="server" />
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        Add To Role
+                        <span class="glyphicon glyphicon-info-sign" title="Add the user to a particular role name that is managed by this application"></span>
+                    </div>
+                    <div class="panel-body">
+                        <asp:TextBox ID="GivenRoleName" runat="server" />
+                        <br />
+                        <asp:LinkButton ID="AddToRole" runat="server" CssClass="btn btn-primary" OnClick="AddToRole_Click">Add To Role</asp:LinkButton>
                     </div>
                 </div>
             </div>

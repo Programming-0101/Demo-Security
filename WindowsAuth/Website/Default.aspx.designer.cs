@@ -94,6 +94,24 @@ namespace Website {
         protected global::System.Web.UI.WebControls.Label WebAppIdentity;
         
         /// <summary>
+        /// GivenRoleName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox GivenRoleName;
+        
+        /// <summary>
+        /// AddToRole control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton AddToRole;
+        
+        /// <summary>
         /// IISVersion control.
         /// </summary>
         /// <remarks>
