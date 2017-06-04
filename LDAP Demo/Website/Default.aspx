@@ -28,7 +28,7 @@
                 <asp:TextBox ID="UserDN" runat="server" CssClass="form-control" />
 
                 <asp:Label ID="Label5" runat="server" AssociatedControlID="Password" data-toggle="tooltip" data-placement="right" title="The password for the user">Password</asp:Label>
-                <asp:TextBox ID="Password" runat="server" CssClass="form-control" />
+                <asp:TextBox ID="Password" runat="server" CssClass="form-control" TextMode="Password" />
             </fieldset>
         </div>
         <div class="col-md-4">
