@@ -79,6 +79,9 @@ The focus is on coding with Identity 2.0 with Entity Framework 6.
 
 - [Channel 9 - Customizing ASP.NET Authentication with Identity](https://channel9.msdn.com/Series/Customizing-ASPNET-Authentication-with-Identity)
 - [Configuring Chrome and Firefox for Windows Integrated Authentication](https://specopssoft.com/configuring-chrome-and-firefox-for-windows-integrated-authentication/)
+- [How to Configure the Server to be Trusted for Delegation](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/appv-v4/how-to-configure-the-server-to-be-trusted-for-delegation)
+- [Credentials Processes in Windows Authentication](https://docs.microsoft.com/en-us/windows-server/security/windows-authentication/credentials-processes-in-windows-authentication)
+- [Group Policy Settings Used in Windows Authentication](https://docs.microsoft.com/en-us/windows-server/security/windows-authentication/group-policy-settings-used-in-windows-authentication)
 
 ## Repositories
 
