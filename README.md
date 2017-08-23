@@ -1,5 +1,11 @@
 # Programming 0101 Training Resources
 
+## Database Encryption
+
+The **Database Encryption** demo solution shows a simple SQL Column-Level encryption table that is inserted into and deleted from using EF6 and stored procedure calls.
+
+Before running this solution, set up a database using the `Database Setup.sql` script file.
+
 ## LOGs
 
 At the end of this topic, you should be able to:
