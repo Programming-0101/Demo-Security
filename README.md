@@ -6,6 +6,28 @@ The **Database Encryption** demo solution shows a simple SQL Column-Level encryp
 
 Before running this solution, set up a database using the `Database Setup.sql` script file.
 
+Credits/Resources:
+
+- [SQL Server Column Level Encryption Example using Symmetric Keys](https://www.mssqltips.com/sqlservertip/2431/sql-server-column-level-encryption-example-using-symmetric-keys/)
+- http://www.dotnetpiper.com/2015/01/database-table-encryption-using.html?m=1
+- [Sql Server Encryption Tips](https://www.mssqltips.com/sql-server-tip-category/68/encryption-/)
+- [SO Comment](https://stackoverflow.com/a/24317739/2154662) about having the `OPEN SYMMETRIC KEY...` happen in the same transaction as the SQL to encrypt/decrypt the data. In my sample solution, I simply include multiple SQL commands in a single string, so no need to be explicit about setting up a transaction scope.
+- [SO Post](https://stackoverflow.com/a/9401807/2154662) noting three general encryption approaches:
+  - **Transparent Data Encryption** - Feature of SQL Server - whole database is encrypted on SQL Server side. Your application doesn't need to change and it should work with EF.
+  - **Cell level encryption** - feature of SQL Server - selected columns are encrypted and stored as `varbinary`. This requires special query and store commands so you will have to use specialized database views and stored procedures to interact with your DB if you want to use EF. If you don't want to use database views and stored procedures you will have to maintain EDMX manually and write all those SQL commands into its SSDL part.
+  - **Encryption performed in your application** - you will use `ObjectMaterialized` and `SavingChanges` events to handle decryption and encryption yourselves. You will probably be able to encrypt and decrypt only string or binary data because your property data type must not change (in case of string you will have to store encrypted value as base64 string).
+- [SQL SERVER – Introduction to SQL Server Encryption and Symmetric Key Encryption Tutorial with Script](https://blog.sqlauthority.com/2009/04/28/sql-server-introduction-to-sql-server-encryption-and-symmetric-key-encryption-tutorial-with-script/)
+- Yet another [SO Post](https://stackoverflow.com/a/24632752/2154662) pointing to two helpful articles:
+  - [How to use SQL Server Encryption with Symmetric Keys](http://benjii.me/2010/05/how-to-use-sql-server-encryption-with-symmetric-keys/)
+  - [Decrypting Data](http://msdn.microsoft.com/en-us/library/te15te69%28v=vs.110%29.aspx?cs-save-lang=1&cs-lang=csharp#code-snippet-1) **in .NET**.
+- [Encrypting SQL Server: Using an Encryption Hierarchy to Protect Column Data](https://www.red-gate.com/simple-talk/sql/sql-development/encrypting-sql-server-using-encryption-hierarchy-protect-column-data/) - **Has a nice image showing the encryption hierarchy**
+- [CipherDb](https://www.crypteron.com/cipherdb/) - **3rd-Party Service** - see also this [SO reply](https://stackoverflow.com/a/42916385/2154662)
+- [GitHub Gist](https://gist.github.com/albertbori/e95860644e69c1572441) showing a nice approach that somewhat mirrors what *CipherDb* does (above) by allowing entities to have an `[Encrypted]` attribute on various properties. Note however that this encryption occurs in the *application*, rather than being done by the database server.
+- [Encrypt a Column of Data](https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/encrypt-a-column-of-data) (and on [TechNet](https://technet.microsoft.com/en-us/library/ms179331%28v=sql.110%29.aspx?f=255&MSPPError=-2147217396))
+- [SQL Server Encryption Options](http://sqlmag.com/database-security/sql-server-encryption-options)
+- [Column Level Encryption in SQL Server](http://www.databasejournal.com/features/mssql/article.php/3922881/Column-Level-Encryption-in-SQL-Server.htm)
+- [EF6 Insert, Update, and Delete Stored Procedure](https://msdn.microsoft.com/en-us/library/dn468673%28v=vs.113%29.aspx?f=255&MSPPError=-2147217396)
+
 ## LOGs
 
 At the end of this topic, you should be able to:
